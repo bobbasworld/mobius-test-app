@@ -9,7 +9,16 @@ import axios from 'axios'
 
 const BomCard = () => {
 
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState({
+        name: '',
+        username: '',
+        email: '',
+        phone: ''
+    })
+
+    const addUser = (newUser) => {
+        setUser(newUser)
+    }
 
 
     useEffect( () => {
@@ -22,14 +31,13 @@ const BomCard = () => {
     }, [])
 
 
-
     return (
         <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">
                 <BomDetail user={user}/>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
-                <BomForm/>
+                <BomForm addUser={addUser}/>
             </div>
         </div>
     )
