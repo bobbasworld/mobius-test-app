@@ -1,38 +1,126 @@
-.App {
+body {
+  background: #f8f9fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+strike {
+  font-family: "Montserrat", sans-serif;
+  color: #495057;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+.form-control {
+  border: 1px solid #dee2e6;
+  background: none;
+}
+
+.form-control:focus {
+  background: none;
+  box-shadow: none;
+  /* box-shadow: 0.5px 0.5px #69db7c; */
+  border-color: #69db7c;
+}
+
+::placeholder {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoContainer {
+  padding: 10px;
+  margin-left: 45%;
+  margin-top: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* BomContainer */
+
+.logo {
+  padding: 3px;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bomcardContainer {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 2px 2px 2px #b3aeae;
+  padding-left: 0;
+  margin-bottom: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.bomcardImage {
+  width: 250px;
+  margin-left: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bomcardContainer2 {
+  border-radius: 12px;
+  padding: 0;
+}
+
+.bomcardHeader {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 2%;
+  margin-left: 33%;
+  margin-bottom: 4%;
+}
+
+.bomcardItem {
+  margin-left: 10%;
+  width: 500px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.bomcardItemText {
+  margin-right: -6%;
+}
+
+.bomcardTitles {
+  margin-left: 12%;
+  width: 500px;
+  text-align: justify;
+  margin-left: 20%;
+  padding-bottom: 2%;
+}
+
+.bomcardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #868e96;
+  font-weight: 600;
+  margin-left: 9%;
+}
+
+/* BomDetail */
+/* BomForm */
+.btnEdit {
+  background: linear-gradient(
+    90deg,
+    rgba(134, 255, 43, 0.7525385154061625) 39%,
+    rgba(43, 255, 144, 1) 100%
+  );
+  width: 100%;
+
+  font-weight: 700;
+  color: #fff;
+}
+
+.btnEdit:hover {
+  box-shadow: 0.5px 2px 2px #b3aeae;
+  color: #fff;
 }
