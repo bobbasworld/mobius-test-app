@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 
-const BomDetail = ({user}) => {
+const BomDetail = ({item}) => {
     return (
         <Fragment>
             <div className="bomcardContainer">
@@ -9,10 +9,10 @@ const BomDetail = ({user}) => {
                 </div>
                     <h3 className="bomcardHeader">Details:</h3>
                     <div className="bomcardTitles">
-                        <p className="bomcardTitle">Name: {user.name}</p>
-                        <p className="bomcardTitle">Username: {user.username}</p>
-                        <p className="bomcardTitle">Email: {user.email}</p>
-                        <p className="bomcardTitle">Phone: {user.phone}</p>
+                        <p className="bomcardTitle">BOM: {item.bom}</p>
+                        <p className="bomcardTitle">Cost: {item.item_unit_cost}</p>
+                        <p className="bomcardTitle">Quantity: {item.quantity}</p>
+                        <p className="bomcardTitle">Specific Part: {item.specific_part}</p>
                     </div>
             </div>
         </Fragment>

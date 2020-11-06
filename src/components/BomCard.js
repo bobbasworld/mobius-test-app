@@ -9,23 +9,23 @@ import axios from 'axios'
 
 const BomCard = () => {
 
-    const [user, setUser] = useState({
-        name: '',
-        username: '',
-        email: '',
-        phone: ''
+    const [item, setItem] = useState({
+        bom: '',
+        item_unit_cost: '',
+        quantity: '',
+        specific_part: ''
     })
 
-    const addUser = (newUser) => {
-        setUser(newUser)
+    const addItem = (newItem) => {
+        setItem(newItem)
     }
 
 
     useEffect( () => {
-        axios.get('https://jsonplaceholder.typicode.com/users/1')
+        axios.get('https://run.mocky.io/v3/cc19c73b-076c-473d-b695-38f1316ac7aa')
         .then(response => {
             console.log("response data: ", response.data)
-            setUser(response.data)
+            setItem(response.data.fields)
         })
         .catch(err => console.log(err))
     }, [])
@@ -34,10 +34,10 @@ const BomCard = () => {
     return (
         <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">
-                <BomDetail user={user}/>
+                <BomDetail item={item}/>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
-                <BomForm addUser={addUser}/>
+                <BomForm addItem={addItem}/>
             </div>
         </div>
     )
