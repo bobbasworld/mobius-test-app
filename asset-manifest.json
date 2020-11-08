@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mobius-test-app/static/css/main.8959a053.chunk.css",
-    "main.js": "/mobius-test-app/static/js/main.e6aad4b6.chunk.js",
-    "main.js.map": "/mobius-test-app/static/js/main.e6aad4b6.chunk.js.map",
+    "main.js": "/mobius-test-app/static/js/main.c9d61047.chunk.js",
+    "main.js.map": "/mobius-test-app/static/js/main.c9d61047.chunk.js.map",
     "runtime-main.js": "/mobius-test-app/static/js/runtime-main.ab3c2214.js",
     "runtime-main.js.map": "/mobius-test-app/static/js/runtime-main.ab3c2214.js.map",
     "static/js/2.f46f5345.chunk.js": "/mobius-test-app/static/js/2.f46f5345.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ab3c2214.js",
     "static/js/2.f46f5345.chunk.js",
     "static/css/main.8959a053.chunk.css",
-    "static/js/main.e6aad4b6.chunk.js"
+    "static/js/main.c9d61047.chunk.js"
   ]
 }
