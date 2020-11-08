@@ -26,8 +26,6 @@ const BomForm = ({addItem}) => {
     let newDate = new Date()
     let updatedDate = newDate.toISOString()
 
-    console.log('updatedDate: ', updatedDate)
-
     const putData = {
       fields: {
         uuid: "0b1ee8c4-03bd-4fd8-a016-226dba25f0f6",
