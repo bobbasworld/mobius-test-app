@@ -22,7 +22,26 @@ const BomForm = ({addItem}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.put('https://run.mocky.io/v3/cc19c73b-076c-473d-b695-38f1316ac7aa', {fields: data})
+
+    let newDate = new Date()
+    let updatedDate = newDate.toISOString()
+
+    console.log('updatedDate: ', updatedDate)
+
+    const putData = {
+      fields: {
+        uuid: "0b1ee8c4-03bd-4fd8-a016-226dba25f0f6",
+        created_at: "2020-08-27T00:38:01.689Z",
+        updated_at: updatedDate,
+        is_active: true,
+        bom: parseInt(data.bom),
+        item_unit_cost: data.item_unit_cost,
+        quantity: parseInt(data.quantity),
+        specific_part: parseInt(data.specific_part)
+      }
+    }
+
+    axios.put('https://run.mocky.io/v3/cc19c73b-076c-473d-b695-38f1316ac7aa', putData)
     .then(res => {
       console.log('PUT res: ', res)
       addItem(data)
@@ -41,7 +60,7 @@ const BomForm = ({addItem}) => {
 
   
 
-  return(
+  return (
       <div className="bomcardContainer2">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
